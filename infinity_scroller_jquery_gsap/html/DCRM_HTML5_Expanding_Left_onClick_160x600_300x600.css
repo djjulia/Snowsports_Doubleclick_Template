@@ -1,0 +1,645 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	
+}
+
+/* Div layer for the entire banner. */
+#container_dc {
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	overflow: hidden;
+	background-color: #000;	
+	
+}
+
+#content_dc {
+	position: absolute;
+	width:300px;
+	height: 600px;
+	border:1px solid #666666;
+	top: 0px;
+	right:0px;
+	background-color: #FFF;
+	z-index: 100;
+	overflow:hidden;
+	box-sizing:border-box; 
+	background-color:#fff;
+	background-image:url(bg.jpg);
+	background-position:left;
+	
+}
+
+#expand_content_dc{
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	border:1px solid #666666;
+	top: 0px;
+	right:0px;
+	background-color: #000;
+	z-index: 200;
+	display:none;
+	box-sizing:border-box;
+	
+}
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+#expand_btn_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 400;
+}
+
+#close_btn_dc{
+	position:absolute;
+	width:37px;
+	height:41px;
+	top:20px;
+	right:20px;
+	cursor:pointer;
+	background-image:url(close.png);
+	background-repeat:no-repeat;
+	background-color:transparent;
+	z-index:605;
+}
+
+#close_btn_dc:hover{
+	opacity:0.8;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/*Expanded*/
+
+#logo
+{
+	position:absolute;
+	top:20px;
+	left:30px;	
+	z-index:200;
+}
+
+#nav
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:500px;
+	height:117px;
+	background-image:url(nav_bg.png);
+	z-index:605;
+}
+
+#expertise_icon
+{
+	position:absolute;
+	top:30px;
+	left:57px;
+	z-index:500;
+	width:43px;
+	height:64px;
+	background-color:transparent;
+	cursor:pointer;	
+	opacity:.7;
+}
+
+#school_icon
+{
+	position:absolute;
+	top:25px;
+	left:215px;
+	z-index:500;
+	width:74px;
+	height:69px;
+	background-color:transparent;
+	cursor:pointer;	
+	opacity:.7;
+
+}
+
+#gear_icon
+{
+	position:absolute;
+	top:28px;
+	left:404px;	
+	z-index:500;
+	width:39px;
+	height:68px;
+	background-color:transparent;
+	cursor:pointer;
+	opacity:.7;
+	
+}
+
+#expertise_mtn
+{
+	position:absolute;
+	top:104px;
+	left:63px;	
+}
+
+#school_mtn
+{
+	position:absolute;
+	top:104px;
+	left:237px;	
+}
+
+#gear_mtn
+{
+	position:absolute;
+	top:104px;
+	left:406px;	
+}
+
+/* --End Nav -- */
+
+#expertise_exp
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:498px;
+	height:598px;	
+}
+
+#school_exp
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:498px;
+	height:598px;	
+}
+
+#gear_exp
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:498px;
+	height:598px;	
+}
+
+#expertise_bg
+{
+	background-image:url(expert_bg.jpg);
+	background-repeat:no-repeat;
+	width:498px;
+	height:600px;
+	position:relative;
+	margin:0 0 0 0;		
+}
+
+#school_bg
+{
+	background-image:url(school_bg.jpg);
+	background-repeat:no-repeat;
+	width:498px;
+	height:600px;
+	position:relative;
+	margin:0 0 0 0;			
+}
+
+#gear_bg
+{
+	background-image:url(gear_bg.jpg);
+	background-repeat:no-repeat;
+	width:498px;
+	height:600px;
+	position:relative;
+	margin:0 0 0 0;			
+}
+
+#box1
+{
+	position:absolute;	
+}
+
+#exp_mountain
+{
+	position:absolute;
+	top:126px;
+	left:25px;	
+}
+
+#exp_line1
+{
+	position:absolute;
+	top:194px;
+	left:25px;
+}
+
+#exp_line2
+{
+	position:absolute;
+	top:227px;
+	left:25px;
+}
+
+#exp_line3
+{
+	position:absolute;
+	top:306px;
+	left:25px;
+}
+
+#exp_cta
+{
+	position:absolute;
+	top:345px;
+	left:25px;
+	z-index:406;
+	cursor:pointer;
+}
+
+#box2
+{
+	position:absolute;	
+}
+
+#school_mountain
+{
+	position:absolute;
+	top:126px;
+	left:25px;	
+}
+
+#school_line1
+{
+	position:absolute;
+	top:193px;
+	left:25px;	
+}
+
+#school_line2
+{
+	position:absolute;
+	top:229px;
+	left:25px;	
+}
+
+#school_line3
+{
+	position:absolute;
+	top:307px;
+	left:25px;	
+}
+
+#school_cta
+{
+	position:absolute;
+	top:346px;
+	left:25px;
+	z-index:406;
+	cursor:pointer;	
+}
+
+#box3
+{
+	position:absolute;	
+}
+
+#gear_mountain
+{
+	position:absolute;
+	top:126px;
+	left:25px;	
+}
+
+#gear_line1
+{
+	position:absolute;
+	top:194px;
+	left:25px;	
+}
+
+#gear_line2
+{
+	position:absolute;
+	top:228px;
+	left:25px;	
+}
+
+#gear_line3
+{
+	position:absolute;
+	top:307px;
+	left:25px;	
+}
+
+#gear_cta
+{
+	position:absolute;
+	top:370px;
+	left:25px;
+	z-index:407;	
+}
+
+/* ----------------------------------------------Carousel */
+
+#arrowT
+{
+	position:absolute;
+	left:315px;
+	top:80px;	
+	z-index:603;
+	cursor:pointer;
+}
+
+#arrowB
+{
+	position:absolute;
+	left:315px;
+	top:430px;	
+	z-index:604;
+	cursor:pointer;
+}
+
+#carousel_container
+{
+	position: absolute;
+	width: 260px; /* width */ 
+	height: 600px; /* # of products X stage height */ 
+	overflow:hidden;
+	cursor:pointer;
+	top:0;
+	left:229px;
+	z-index:601;	
+}
+
+#carousel_inner {
+float:left; /* important for inline positioning */
+width:260px; /* important (this width = width of list item(including margin) * items shown */
+height:600px;
+overflow: hidden;  /* important (hide the items outside the div) */
+/* non-important styling bellow */
+
+}
+
+#carousel_ul {
+position:relative;
+top:-600px; /* important (this should be negative number of list items width(including margin) */
+list-style-type: none; /* removing the default styling for unordered list items */
+margin-top:-25px;
+padding: 0px;
+width:9999px; /* important */
+/* non-important styling bellow 
+padding-bottom:10px; */
+}
+
+#carousel_ul li{
+/* float: left;  important for inline positioning of the list items */
+width:260px;  /* fixed width, important */
+/* just styling bellow*/
+padding:0px;
+height:600px;
+background: transparent;
+margin-top:10px; 
+
+margin-left:5px;
+margin-right:5px;
+}
+
+#carousel_ul li img {
+/*.margin-bottom:-4px;  IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/
+/* styling */
+cursor:pointer;
+cursor: hand;
+border:0px;
+}
+
+/* Carousel Text */
+#carousel_container1
+{
+	position: absolute;
+	width: 500px; /* width */ 
+	height: 600px; /* # of products X stage height */ 
+	overflow:hidden;
+	cursor:pointer;
+	top:0;
+	left:0px;
+	z-index:602;	
+}
+
+#carousel_inner1 {
+float:left; /* important for inline positioning */
+width:500px; /* important (this width = width of list item(including margin) * items shown */
+height:600px;
+overflow: hidden;  /* important (hide the items outside the div) */
+/* non-important styling bellow */
+
+}
+
+#carousel_ul1 {
+position:relative;
+top:-600px; /* important (this should be negative number of list items width(including margin) */
+list-style-type: none; /* removing the default styling for unordered list items */
+margin-top:-25px;
+padding: 0px;
+width:9999px; /* important */
+/* non-important styling bellow 
+padding-bottom:10px; */
+}
+
+#carousel_ul1 li{
+/* float: left;  important for inline positioning of the list items */
+width:500px;  /* fixed width, important */
+/* just styling bellow*/
+padding:0px;
+height:600px;
+background: transparent;
+margin-top:10px; 
+
+margin-left:5px;
+margin-right:5px;
+}
+
+#carousel_ul1 li img {
+/*.margin-bottom:-4px;  IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/
+/* styling */
+cursor:pointer;
+cursor: hand;
+border:0px;
+}
+
+
+#product1
+{
+	padding-left:28px;	
+	position:relative;
+}
+
+#product2
+{
+	padding-left:24px;
+	position:relative;	
+}
+
+#product3
+{
+	padding-left:0px;
+	position:relative;	
+}
+
+
+#product_txt
+{
+	position:absolute;
+	width:217px;
+	height:1800px;	
+	top:345px;
+	left:229px;
+	z-index:402;
+}
+
+.txt_container { /* div containing individual product text  */
+	float:left;
+	text-align:center;
+	height:600px; /*must match unit width */
+	/*background-color:#C62A2D;*/
+	margin-top:0px; /*adjust spacing between image and text */
+	padding:0!important;
+}
+
+#text1
+{
+	position:relative;
+		
+}
+
+#text2
+{
+	position:relative;	
+}
+
+#text3
+{
+	position:relative;
+		
+}
+
+
+
+/*button swaps */
+
+#helmet_cta
+{
+	position:absolute;
+	top:370px;
+	left:25px;
+	z-index:407;
+	cursor:pointer;		
+}
+
+#jacket_cta
+{
+	position:absolute;
+	top:370px;
+	left:25px;
+	z-index:407;
+	cursor:pointer;		
+}
+
+#bindings_cta
+{
+	position:absolute;
+	top:370px;
+	left:25px;
+	z-index:407;
+	cursor:pointer;	
+}
+
+/*End Carousel */
+/* Collapsed */
+
+#collapsed_mountain
+{
+	position:absolute;
+	top:153px;
+	left:44px;	
+}
+
+#collapsed_text1
+{
+	position:absolute;
+	top:244px;
+	left:59px;	
+}
+
+
+#collapsed_text2
+{
+	position:absolute;
+	top:274px;
+	left:40px;
+}
+
+#collapsed_text3
+{
+	position:absolute;
+	top:321px;
+	left:53px;	
+}
+
+#collapsed_icons
+{
+	position:absolute;
+	top:246px;
+	left:31px;	
+}
+
+#collapsed_text4
+{
+	position:absolute;
+	top:345px;
+	left:46px;	
+}
+
+#collapsed_text5
+{
+	position:absolute;
+	top:375px;
+	left:73px;
+}	
+
+#collapsed_box
+{
+	position:absolute;	
+}
+
+#collapsed_cta
+{
+	position:absolute;
+	top:430px;
+	left:97px;	
+}
